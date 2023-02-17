@@ -1,0 +1,24 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+html, body {
+   @apply absolute w-full h-full bg-white;
+   @apply text-root/ml sm:text-root/sm;
+
+}
+
+
+:root {
+   --color-primary: #353535;
+   --color-secondary: rgb(132, 97, 85);
+   --color-tertiary: #95dfff;
+   --color-quaternary: rgb(228, 228, 228);
+}
+
+*::selection {
+   @apply bg-tertiary;
+}
