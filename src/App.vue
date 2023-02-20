@@ -58,22 +58,22 @@
 <style lang="scss">
 
   .filter-outline {
-    filter: url(duration-500https://czkaa.github.io/insert-title-here/#outline);
+    filter: url(https://czkaa.github.io/insert-title-here/#outline);
   }
 
   .filter-outline-xs {
-    filter: url(duration-500https://czkaa.github.io/insert-title-here/#outline-xs);
+    filter: url(https://czkaa.github.io/insert-title-here/#outline-xs);
   }
 
   .filter-blur {
-    filter: url(duration-500https://czkaa.github.io/insert-title-here/#blur);
+    filter: url(https://czkaa.github.io/insert-title-here/#blur);
     &:hover {
-      filter: url(duration-500https://czkaa.github.io/insert-title-here/#blur-hover);
+      filter: url(https://czkaa.github.io/insert-title-here/#blur-hover);
     }
   }
 
   .filter-blur2 {
-    filter: url(duration-500https://czkaa.github.io/insert-title-here/#blur2);
+    filter: url(https://czkaa.github.io/insert-title-here/#blur2);
   }
 
   .wireframe-border {
@@ -92,7 +92,7 @@
 
    .wireframe-text-sm {
     @apply text-white;
-    filter: url(duration-500https://czkaa.github.io/insert-title-here/#outline);
+    filter: url(https://czkaa.github.io/insert-title-here/#outline);
   }
 
 
