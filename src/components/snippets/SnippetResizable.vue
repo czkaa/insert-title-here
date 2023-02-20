@@ -2,7 +2,7 @@
     <div snippet-resizable resize class="resize overflow-hidden relative p-3 filter-outline">
         <slot/>
         
-        <BasicResizable  class="pointer-events-none absolute top-0 left-0 w-full h-full"/>
+        <BasicResizable  class="pointer-events-none absolute top-0 left-0 w-full h-full wireframe-visible"/>
     </div>
 </template>
   

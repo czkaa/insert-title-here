@@ -14,8 +14,8 @@ html, body {
 
 :root {
    --color-primary: #353535;
-   --color-secondary: rgb(134, 121, 117);
-   --color-tertiary: #dbff4c;
+   --color-secondary: rgb(133, 110, 103);
+   --color-tertiary: hsl(221, 100%, 82%);
    --color-quaternary: rgb(228, 228, 228);
 }
 

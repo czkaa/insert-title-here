@@ -27,34 +27,23 @@ function handleMousemove(e) {
     offsetIsSet.value = true
   }
 
-  styleObject.value = {top: `${e.clientY - offset.value.top}px`, left: `${e.clientX - offset.value.left}px`, position: 'absolute' }
-
-  console.log(offset.value)
+  styleObject.value = {top: `${e.clientY - offset.value.top}px`, left: `${e.clientX - offset.value.left}px`, position: 'fixed' }
   counter.value ++
 
-  if (counter.value > 50) {
+  if (counter.value > 25) {
     isActivated.value = false
   }
 }
 
 
 watch(() => isActivated.value, (newVal, oldVal) => {
-
-  
     if (newVal) {
       window.addEventListener('mousemove', handleMousemove)
-
     } else {
       window.removeEventListener('mousemove', handleMousemove)
       offsetIsSet.value = false
     }
-
     counter.value = 0
-
-
-
-
-
 })
 
 

@@ -1,6 +1,8 @@
 <template>
-  <div home class="w-full h-full">
-    <PageHome :content="content"/>
+  <div schedule class="w-full h-full">
+    <PageSchedule :content="content"/>
+
+    <UtilityFilters/>
   </div>
 </template>
 

@@ -12,8 +12,8 @@ module.exports = {
       'root/ml': '1.25vw',
       'root/sm': '2vw',
 
-      xl: ['9.5vw', {
-        letterSpacing: '-0.04em',
+      xl: ['9vw', {
+        letterSpacing: '-0.1em',
         lineHeight: '0.8',
       }],
       lg: ['3rem', {
@@ -42,7 +42,8 @@ module.exports = {
       },
       spacing: {
         'sm' : '0.5rem',
-        'md' : '1rem'
+        'md' : '1rem',
+        '30' : '7.5rem'
       },
       dropShadow: {
         'shape': '0rem .2rem .1rem rgba(0,0,0,.5)',
@@ -74,7 +75,7 @@ module.exports = {
       margin: ["responsive", "hover", "focus", "group-hover"],
       transform: ["responsive", "hover", "focus", "group-hover"],
       translate: ["responsive", "hover", "focus", "group-hover"],
-      group: ["responsive", "hover", "focus", "group-hover"],
+      webkitTextStroke: ["responsive", "hover", "focus", "group-hover"],
     },
   },
   plugins: [],
