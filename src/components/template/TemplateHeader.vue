@@ -3,7 +3,7 @@
       <h1 class="text-xl font-sans p-2 my-2 ">
         <div class="border border-dashed border-white ">
           <BasicInput style="letter-spacing: -0.05em;" 
-            placeholder="1Insert Title Here" 
+            placeholder="Insert Title Here" 
             text="Dysfunctional Templates" 
             class="whitespace-nowrap wireframe-text-sm text-white block w-full mt-24 overflow-hidden leading-none outline-none bg-transparent text-center placeholder-white" />
         </div>
