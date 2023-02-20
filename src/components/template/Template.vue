@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed w-full h-full flex flex-col items-center overflow-y-auto overflow-x-hidden pb-16">
+    <div class="fixed w-full h-full flex flex-col items-center overflow-y-auto overflow-x-hidden pb-24">
            <!-- <div class="w-full h-8 bg-secondary flex items-center p-2 space-x-2">
           <div class="w-4 h-4 bg-white rounded-full"/>
           <div class="w-4 h-4 bg-white rounded-full"/>
@@ -8,7 +8,7 @@
 
         <TemplateHeader class="z-50 sticky top-3"/>
 
-        <TemplateNav class="z-50 sticky top-28"/>
+        <TemplateNav class="z-50 sticky top-30"/>
 
         <!-- <div class="w-full h-full" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5%'}"> -->
         <TemplateBody class="mt-0"/>
