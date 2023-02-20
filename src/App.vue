@@ -58,22 +58,22 @@
 <style lang="scss">
 
   .filter-outline {
-    filter: url(https://http://czkaa.github.io/insert-title-here/#outline);
+    filter: url(https://czkaa.github.io/insert-title-here/#outline);
   }
 
   .filter-outline-xs {
-    filter: url(https://http://czkaa.github.io/insert-title-here/#outline-xs);
+    filter: url(https://czkaa.github.io/insert-title-here/#outline-xs);
   }
 
   .filter-blur {
-    filter: url(https://http://czkaa.github.io/insert-title-here/#blur);
+    filter: url(https://czkaa.github.io/insert-title-here/#blur);
     &:hover {
-      filter: url(https://http://czkaa.github.io/insert-title-here/#blur-hover);
+      filter: url(https://czkaa.github.io/insert-title-here/#blur-hover);
     }
   }
 
   .filter-blur2 {
-    filter: url(https://http://czkaa.github.io/insert-title-here/#blur2);
+    filter: url(https://czkaa.github.io/insert-title-here/#blur2);
   }
 
   .wireframe-border {
