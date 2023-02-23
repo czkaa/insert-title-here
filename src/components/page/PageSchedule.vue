@@ -1,14 +1,27 @@
 <template>
-  <main page-schedule class="fixed top-0 left-0 mx-12 my-2 bg-tertiary rounded-xl p-3 pointer-events-auto" style="min-height: 80vh" v-if="route.name !== 'Home'">
-    <div class="flex justify-between">
-      <h3 class="text-secondary text-md filter-outline">Title</h3>
+  <div class="fixed w-full h-full pointer-events-auto py-7 px-16">
+    <main page-schedule class="bg-tertiary rounded-xl p-3 transition-all duration-500 h-full flex flex-col">
+      <div class="flex justify-between">
+        <h3 class="text-secondary text-md" style="filter: url(#outline-xs)">Schedule</h3>
 
-      <router-link to="/" class="block w-10 h-10 filter-outline transform rotate-45">
-        <div class="w-full top-1/2 absolute h-1 -mt-0.5 rounded-full bg-secondary"></div>
-        <div class="w-1 h-full -ml-0.5 top-0 left-1/2 absolute rounded-full bg-secondary"></div>
-      </router-link>
-    </div>
-  </main>
+        <SnippetCloseButton/>
+      </div>
+
+      <table class="w-full h-full table-fixed text-secondary mt-4">
+        <tr class="h-10 w-full border border-secondary">
+          <th class="w-1/6 border-2 border-secondary"></th>
+          <th class="w-1/6 border-2 border-secondary">Session 1</th>
+          <th class="w-1/6 border-2 border-secondary">Session 2</th>
+          <th class="w-1/6 border-2 border-secondary">Session 3</th>
+          <th class="w-1/6 border-2 border-secondary">Session 4</th>
+          <th class="w-1/6 border-2 border-secondary">Session 5</th>
+        </tr>
+        <tr v-for="index in 5" class="h-1/6 border-2 border-secondary">
+          <td v-for="index in 6" class=" w-1/6 h-10 border-2 border-secondary"></td>
+        </tr>
+      </table>
+    </main>
+  </div>
 </template>
 
 <script setup>

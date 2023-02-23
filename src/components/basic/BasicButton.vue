@@ -1,5 +1,5 @@
 <template>
-    <button class="text-secondary text-md p-3 overflow-hidden rounded-full relative p-1">
+    <button basic-button class="text-secondary text-md p-3 overflow-hidden rounded-full relative p-1">
       <div class="button filter blur-md w-full h-full absolute"/>
       <div class="button filter top-0 left-0  rounded-full w-full h-full absolute border border-secondary"/>
       <div class="w-full h-full px-5 py-3 z-50 rounded-full text-center">{{props.text}}</div>

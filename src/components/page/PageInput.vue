@@ -1,20 +1,32 @@
 <template>
-  <main page-input class="fixed top-0 left-0 mx-12 my-2 bg-tertiary rounded-xl p-3 pointer-events-auto" style="min-height: 80vh" v-if="route.name !== 'Home'">
-    <div class="flex justify-between">
-      <h3 class="text-secondary text-md filter-outline">Title</h3>
-      <SnippetCloseButton/>
-    </div>
-  </main>
+  <div class="fixed w-full h-full pointer-events-auto py-6 px-16">
+    <main page-input class="bg-tertiary rounded-xl p-3 transition-all duration-500 h-full">
+      <div class="flex justify-between">
+        <h3 class="text-secondary text-md" style="filter: url(#outline-xs)">Input</h3>
+        <SnippetCloseButton/>
+      </div>
+
+      <div  class="text-secondary space-y-4 mt-4 text-sm" >
+
+        <p class="mb-4">In this course, we will examine our own idea of a (dys)functional template. Starting with an introduction to HTML and CSS HTML, CSS, and JS, prior coding skills are not required. The sessions will contain input, coding tutorials, discussions, collective coding and consultations.
+        </p>
+        <details v-for="index in 6">
+          <summary>Session {{ index }}</summary>
+          <p>...</p>
+        </details>
+      </div>
+
+      
+
+    </main>
+  </div>
 </template>
 
 <script setup>
-import SnippetCloseButton from '../snippets/SnippetCloseButton.vue';
 
 const props = defineProps({
     content: Object
   })
-
-
   import { useRoute } from 'vue-router'
   const route = useRoute();
 </script>

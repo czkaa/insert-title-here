@@ -41,6 +41,7 @@ module.exports = {
         'quaternary' : 'var(--color-quaternary)',
       },
       spacing: {
+        '0.25' : '0.05rem',
         'sm' : '0.5rem',
         'md' : '1rem',
         '30' : '7.5rem'
@@ -63,7 +64,12 @@ module.exports = {
           '0%': { marginLeft: '-20rem'},
           '100%': {  marginLeft: '0'},
         },
+      },
+      minHeight: {
+        'textarea': '55vh',
+        'textarea-sm' : '65vh'
       }
+
     }
   },
   variants: {

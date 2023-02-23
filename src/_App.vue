@@ -82,8 +82,8 @@
     filter: url(/#blur);
   }
 
-  .filter-blur2 {
-    filter: url(/#blur2);
+  .filter-blur-xl {
+    filter: url(/#blur-xl);
   }
 
   .wireframe-border {
@@ -129,8 +129,8 @@
       filter: url(/#blur-w);
     }
 
-    .filter-blur2 {
-      filter: url(/#blur2-w);
+    .filter-blur-xl {
+      filter: url(/#blur-xl-w);
 
       div {
         @apply bg-tertiary w-full h-full m-0;

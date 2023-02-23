@@ -2,13 +2,15 @@
   <div>
     <Template
       :class="[
-        'fixed w-full h-full top-0 left-0',
-        route.name !== 'Home' ? 'pointer-events-none' : 'pointer-events-auto'
+        'fixed w-full h-full top-0 left-0 -z-50',
+        route.name !== 'Home' ? 'pointer-events-none overflow-hidden' : 'pointer-events-auto'
       ]"/>
 
+
+      
         <router-view  v-slot="{ Component }">
           <transition name="slide">
-            <component :is="Component" :key="route.path" :content="content" class=""/>
+            <component :is="Component" :key="route.path" :content="content" class="z-50"  v-if="route.name !== 'Home'"  />
           </transition>
         </router-view>
 
@@ -26,17 +28,19 @@
   
   const store = useStore();
   const route = useRoute();
-  const isWireframe = computed(() => { return store.state.isWireframe});
   const isLoading = ref(true);
   const content = ref(null)
 
-  watch(() =>isWireframe.value, (val) => {
-    // if(!val) {
-    //   document.body.classList.add('themed-filled')
-    // } else {
-    //   document.body.classList.remove('themed-filled')
-    // }
-  })
+  // watch(() => route.path, (val) => {
+  //   console.log('SET')
+  //   if (val !== '/') {
+  //     document.documentElement.style.setProperty('--color-secondary', 'hsl(221, 100%, 82%)');
+  //     document.documentElement.style.setProperty('--color-tertiary', 'rgb(133, 110, 103)');
+  //   } else {
+  //     document.documentElement.style.setProperty('--color-secondary', 'rgb(133, 110, 103)');
+  //     document.documentElement.style.setProperty('--color-tertiary', 'hsl(221, 100%, 82%)');
+  //   }
+  // })
 
   async function fetchContent() {
     axios
@@ -58,22 +62,22 @@
 <style lang="scss">
 
   .filter-outline {
-    filter: url(http://czkaa.github.io/insert-title-here/#outline);
+    filter: url(http://localhost:8080/input/#outline);
   }
 
   .filter-outline-xs {
-    filter: url(http://czkaa.github.io/insert-title-here/#outline-xs);
+    filter: url(/#outline-xs);
   }
 
   .filter-blur {
-    filter: url(http://czkaa.github.io/insert-title-here/#blur);
+    filter: url(/#blur);
     &:hover {
-      filter: url(http://czkaa.github.io/insert-title-here/#blur-hover);
+      filter: url(/#blur-hover);
     }
   }
 
-  .filter-blur2 {
-    filter: url(http://czkaa.github.io/insert-title-here/#blur2);
+  .filter-blur-xl {
+    filter: url(/#blur-xl);
   }
 
   .wireframe-border {
@@ -92,7 +96,7 @@
 
    .wireframe-text-sm {
     @apply text-white;
-    filter: url(http://czkaa.github.io/insert-title-here/#outline);
+    filter: url(/#outline);
   }
 
 
@@ -113,7 +117,7 @@
 
   .slide-enter-active,
   .slide-leave-active {
-    transition: all 500ms ease-out;
+    transition: all 800ms ease-out;
     position: fixed;
   }
 

@@ -1,9 +1,9 @@
 <template>
-    <div snippet-resizable resize class="resize overflow-hidden relative p-3 filter-outline">
+    <div snippet-resizable resize class="resize overflow-hidden relative p-3" style="filter: url(#outline)">
         <slot/>
-        
-        <BasicResizable  class="pointer-events-none absolute top-0 left-0 w-full h-full wireframe-visible"/>
+        <BasicResizable  class="pointer-events-none absolute top-0 left-0 w-full h-full"/>
     </div>
+    
 </template>
   
 <script setup>

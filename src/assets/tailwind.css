@@ -14,7 +14,7 @@ html, body {
 
 :root {
    --color-primary: #353535;
-   --color-secondary: rgb(133, 110, 103);
+   --color-secondary: rgb(150, 130, 125);
    --color-tertiary: hsl(221, 100%, 82%);
    --color-quaternary: rgb(228, 228, 228);
 }
