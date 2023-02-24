@@ -6,7 +6,7 @@
         
         <TemplateGrid class="fixed top-0 left-0"/>
 
-        <TemplateNav class="z-50 sticky top-40 sm:top-26 transform -translate-y-7 sm:-translate-y-12"/>
+        <TemplateNav class="z-50 sticky top-40 sm:top-26 transform -translate-y-8 sm:-translate-y-12"/>
 
         <TemplateBody class="mt-0 sm:mt-8"/>
 

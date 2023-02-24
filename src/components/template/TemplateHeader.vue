@@ -5,7 +5,7 @@
           <BasicInput style="filter: url(#outline)" 
             placeholder="Insert Title Here" 
             text="Dysfunctional Templates" 
-            classNames="h-28 sm:h-20 whitespace-nowrap text-white tracking-tight w-full overflow-hidden leading-none outline-none bg-transparent text-center placeholder-white" />
+            classNames="h-28 sm:h-20 -mt-1 whitespace-nowrap text-white tracking-tight w-full overflow-hidden leading-none outline-none bg-transparent text-center placeholder-white" />
         </div>
       </h1>
     </header>

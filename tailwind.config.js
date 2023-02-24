@@ -44,7 +44,8 @@ module.exports = {
         '0.25' : '0.05rem',
         'sm' : '0.5rem',
         'md' : '1rem',
-        '30' : '7.5rem'
+        '30' : '7.5rem',
+        '35' : '8.75rem'
       },
       dropShadow: {
         'shape': '0rem .2rem .1rem rgba(0,0,0,.5)',

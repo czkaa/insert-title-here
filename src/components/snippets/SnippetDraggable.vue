@@ -1,7 +1,7 @@
 <template>
     <div snippet-draggable resize 
       ref="root"
-      class="z-50 cursor-pointer cursor-move"
+      class="z-50 cursor-pointer cursor-move h-fit"
       @mouseenter="isActivated = true"
       :style="styleObject"
       >
