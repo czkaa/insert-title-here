@@ -20,8 +20,8 @@
         </div>
 
         <SnippetDraggable class="fixed left-8 top-14 sm:top-60" style="filter: url(#outline)">
-            <div class="w-56 h-5 rounded-full transform" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5rem'}"/>
-            <div class="w-28 h-5 rounded-full transform -rotate-45 -mt-5" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5rem'}"/>
+            <div class="w-56 h-5 rounded-full transform" :style="{backgroundImage: `url('/raster.png')`, backgroundSize: '5rem'}"/>
+            <div class="w-28 h-5 rounded-full transform -rotate-45 -mt-5" :style="{backgroundImage: `url('/raster.png')`, backgroundSize: '5rem'}"/>
             <div class="w-20 h-20 relative rounded-full border-secondary border transform translate-4  wireframe-visible">
                 <div class="w-full h-1/2 border-b-2 border-secondary"/>
                 <div class="w-1/2 h-full border-r-2 border-secondary absolute top-0 left-0"/>
@@ -39,7 +39,7 @@
             </div> 
         </SnippetDraggable>
 
-        <div class="w-5 h-6 rounded-full absolute left-7 top-24 sm:top-4 sm:left-4 mt-0.5 transform rotate-45" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5rem', filter: 'url(#outline)'}" />
+        <div class="w-5 h-6 rounded-full absolute left-7 top-24 sm:top-4 sm:left-4 mt-0.5 transform rotate-45" :style="{backgroundImage: `url('/raster.png')`, backgroundSize: '5rem', filter: 'url(#outline)'}" />
 
         
         <h2 :style="{filter: 'drop-shadow(0px 0px 1px var(--color-secondary)) drop-shadow(0px 0px 1px var(--color-secondary))'}"
