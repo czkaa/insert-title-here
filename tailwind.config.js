@@ -10,7 +10,7 @@ module.exports = {
     },
     fontSize: {
       'root/ml': '1.25vw',
-      'root/sm': '2vw',
+      'root/sm': '2.5vw',
 
       xl: ['9vw', {
         letterSpacing: '-0.1em',
@@ -20,16 +20,16 @@ module.exports = {
         letterSpacing: '-0.04em',
         lineHeight: '1',
       }],
-      md: ['2rem', {
+      md: ['max(2rem, 23px)', {
         letterSpacing: '-0.015em',
         lineHeight: '1',
       }],
       sm: ['1.5rem', {
-        letterSpacing: '0.01em',
+        letterSpacing: '-0.01em',
         lineHeight: '1',
       }],
-      xs: ['min(1vw, 0.85rem)', {
-        letterSpacing: '0.01em',
+      xs: ['max(0.85rem, 12px)', {
+        letterSpacing: '-0.01em',
         lineHeight: '1.1',
       }]
     },
