@@ -3,7 +3,7 @@
     <Template
       :class="[
         'fixed w-full h-full top-0 left-0 -z-50',
-        route.name !== 'Home' ? 'pointer-events-none overflow-hidden' : 'pointer-events-auto'
+        route.name !== 'Home' ? 'pointer-events-none' : 'pointer-events-auto'
       ]"/>
 
 
