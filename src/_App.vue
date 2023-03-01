@@ -71,19 +71,19 @@
 <style lang="scss">
 
   .filter-outline {
-    filter: url(//#outline);
+    filter: url(/#outline);
   }
 
   .filter-outline-xs {
-    filter: url(//#outline-xs);
+    filter: url(/#outline-xs);
   }
 
   .filter-blur {
-    filter: url(//#blur);
+    filter: url(/#blur);
   }
 
   .filter-blur-xl {
-    filter: url(//#blur-xl);
+    filter: url(/#blur-xl);
   }
 
   .wireframe-border {
@@ -97,7 +97,7 @@
 
    .wireframe-text-sm {
     @apply text-white;
-    filter: url(//#outline);
+    filter: url(/#outline);
 
   }
 
@@ -126,11 +126,11 @@
 
     .filter-blur {
       @apply bg-tertiary;
-      filter: url(//#blur-w);
+      filter: url(/#blur-w);
     }
 
     .filter-blur-xl {
-      filter: url(//#blur-xl-w);
+      filter: url(/#blur-xl-w);
 
       div {
         @apply bg-tertiary w-full h-full m-0;

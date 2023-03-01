@@ -4,7 +4,7 @@
         <SnippetResizable class="w-9/12 hover:bg-tertiary transition-all duration-500 mx-auto">
             <BasicInput 
             :resize="true" 
-            style="filter: url(/#outline-xs)"
+            style="filter: url(#outline-xs)"
             classNames="w-full text-md text-secondary leading-1 outline-none bg-transparent bg-opacity-20 placeholder-secondary sm:filter-none"
             placeholder="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est."
             text="Countless platforms offer ready-made templates for a wide range of applications. Website builders facilitate drag-and-drop customization. Trained AI-algorithms generate interfaces on demand with only a few keywords as input. 
