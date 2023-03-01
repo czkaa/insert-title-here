@@ -2,7 +2,7 @@
   <div class="fixed w-full h-full pointer-events-auto py-6 px-16">
     <main page-schedule class="bg-tertiary rounded-xl p-3 transition-all duration-500 h-full flex flex-col">
       <div class="flex justify-between">
-        <h3 class="text-secondary text-md" style="filter: url(#outline-xs)">Schedule</h3>
+        <h3 class="text-secondary text-md" style="filter: url(/#outline-xs)">Schedule</h3>
 
         <SnippetCloseButton/>
       </div>

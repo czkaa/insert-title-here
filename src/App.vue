@@ -62,22 +62,22 @@
 <style lang="scss">
 
   .filter-outline {
-    filter: url(http://localhost:8080/input/#outline);
+    filter: url(/http://localhost:8080/input/#outline);
   }
 
   .filter-outline-xs {
-    filter: url(/#outline-xs);
+    filter: url(//#outline-xs);
   }
 
   .filter-blur {
-    filter: url(/#blur);
+    filter: url(//#blur);
     &:hover {
-      filter: url(/#blur-hover);
+      filter: url(//#blur-hover);
     }
   }
 
   .filter-blur-xl {
-    filter: url(/#blur-xl);
+    filter: url(//#blur-xl);
   }
 
   .wireframe-border {
@@ -96,7 +96,7 @@
 
    .wireframe-text-sm {
     @apply text-white;
-    filter: url(/#outline);
+    filter: url(//#outline);
   }
 
 
