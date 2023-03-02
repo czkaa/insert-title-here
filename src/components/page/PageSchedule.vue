@@ -1,8 +1,8 @@
 <template>
-  <div class="fixed w-full h-full pointer-events-auto py-6 px-16">
-    <main page-schedule class="bg-tertiary rounded-xl p-3 transition-all duration-500 h-full flex flex-col">
-      <div class="flex justify-between">
-        <h3 class="text-secondary text-md" style="filter: url(#outline-xs)">Schedule</h3>
+  <div class="absolute w-full h-full pointer-events-auto py-6 px-16">
+    <main page-schedule class="relative bg-tertiary rounded-xl p-3 transition-all duration-500 h-full flex flex-col overflow-y-auto">
+      <div class="flex justify-between flex-shrink-0">
+        <h3 class="text-secondary text-md filter-outline-xs">Schedule</h3>
 
         <SnippetCloseButton/>
       </div>

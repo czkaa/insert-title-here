@@ -6,8 +6,8 @@
 
 
 html, body {
-   @apply absolute w-full h-full bg-white;
-   @apply text-root/ml sm:text-root/sm;
+   @apply fixed w-full h-screen bg-white;
+   @apply text-root/md sm:text-root/sm xs:text-root/xs;
 
 }
 

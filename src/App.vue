@@ -6,7 +6,8 @@
         view !== 'Home' ? 'pointer-events-none' : 'pointer-events-auto'
       ]"/>
 
-        <!-- <router-view  v-slot="{ Component }">
+        <!-- no router view until filter safari issue is fixed
+        <router-view  v-slot="{ Component }">
           <transition name="slide">
             <component :is="Component" :key="route.path" :content="content" class="z-50"  v-if="route.name !== 'Home'"  />
           </transition>
@@ -28,6 +29,7 @@
   import { useRoute } from 'vue-router'
   import { ref, computed, watch, onMounted } from 'vue'
   import { useStore } from 'vuex';
+import bodyParser from "body-parser";
   
   const store = useStore();
   const route = useRoute();
@@ -59,65 +61,49 @@
   onMounted(() => {
     console.log('MOUNTING')
     fetchContent();
+    
+    setTimeout(() => {
+      document.body.classList.add('mounted')
+    }, 1)
   })
 
 </script>
 
 <style lang="scss">
 
-  .filter-outline {
-    filter: url(http://localhost:8080/input/#outline);
+  body {
+    opacity: 0;
+    transition: opacity 800ms linear;
   }
+  .mounted {
+    opacity: 1;
 
-  .filter-outline-xs {
-    filter: url(/#outline-xs);
-  }
+    .filter-outline {
+      filter: url(#outline);
+    }
 
-  .filter-blur {
-    filter: url(/#blur);
-    &:hover {
-      filter: url(/#blur-hover);
+    .filter-outline-xs {
+      filter: url(#outline-xs);
+    }
+
+    .filter-outline-tertiary {
+      filter: url(#outline-tertiary);
+    }
+
+    .filter-blur {
+      filter: url(#blur);
+    }
+
+    .filter-blur-xl {
+      filter: url(#blur-xl);
     }
   }
 
-  .filter-blur-xl {
-    filter: url(/#blur-xl);
-  }
-
-  .wireframe-border {
-    @apply  border border-secondary;
-  }
-  
   .wireframe-text {
     @apply text-white;
     -webkit-text-stroke: 0.9rem white;
   }
 
-  .wireframe-text-hover {
-    @apply text-white;
-    -webkit-text-stroke: 0.9rem var(--color-tertiary);
-  }
-
-   .wireframe-text-sm {
-    @apply text-white;
-    filter: url(/#outline);
-  }
-
-
-    
-//  .wireframe-text-sm {
-//     @apply text-white;
-//     -webkit-text-stroke: 0.9rem white;
-//   }
-
-  .wireframe-visible {
-    @apply opacity-100;
-  } 
-  
-  .wireframe-background {
-    @apply bg-transparent;
-  }
- 
 
   .slide-enter-active,
   .slide-leave-active {

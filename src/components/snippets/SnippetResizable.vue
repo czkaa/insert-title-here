@@ -1,5 +1,5 @@
 <template>
-    <div snippet-resizable resize class="resize overflow-hidden relative p-3" style="filter: url(#outline)">
+    <div snippet-resizable resize class="resize overflow-hidden relative p-3 filter-outline">
         <slot/>
         <BasicResizable  class="pointer-events-none absolute top-0 left-0 w-full h-full"/>
     </div>

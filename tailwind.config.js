@@ -5,12 +5,14 @@ module.exports = {
     screens: {
       lg: {'min': '1800px'},
       md: {'max': '1500px'},
-      sm: {'max': '800px'},
+      sm: {'max': '1000px'},
+      xs: {'max': '700px'},
       'hover-hover': {'raw': '(hover: hover)'}
     },
     fontSize: {
-      'root/ml': '1.25vw',
-      'root/sm': '2.5vw',
+      'root/md': '1.25vw',
+      'root/sm': '2vw',
+      'root/xs': '2.5vw',
 
       xl: ['9vw', {
         letterSpacing: '-0.1em',
@@ -24,7 +26,7 @@ module.exports = {
         letterSpacing: '-0.015em',
         lineHeight: '1',
       }],
-      sm: ['1.5rem', {
+      xs: ['1.5rem', {
         letterSpacing: '-0.01em',
         lineHeight: '1',
       }],
@@ -57,21 +59,20 @@ module.exports = {
       transitionDuration: {
         'transform' : '5000ms'
       },
-      animation: {
-       'slide-right': 'slideRight 1200ms ease-in-out 1 forwards',
-      },
       keyframes: {
-        slideRight :{
-          '0%': { marginLeft: '-20rem'},
-          '100%': {  marginLeft: '0'},
+        shakeSlightly :{
+          '0%': { transform: 'translateY(100px)'},
+          '100%': { transform: 'translateY(0)'}
         },
       },
       minHeight: {
         'textarea': '55vh',
         'textarea-sm' : '65vh'
       }
-
-    }
+    },
+    transitionProperty: {
+      'tracking': 'letter-spacing',
+     }
   },
   variants: {
     extend: {

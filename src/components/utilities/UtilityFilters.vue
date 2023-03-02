@@ -29,7 +29,7 @@
     </defs>
 
     <defs>
-        <filter id="outline" color-interpolation-filters="sRGB">
+        <filter id="outline" color-interpolation-filters="sRGB" filterRes="1200">
             <feDropShadow dx="0" dy="0" stdDeviation="1.75" in="SourceGraphic" flood-color="var(--color-secondary)" result="blur" flood-opacity="2"></feDropShadow>
             <feColorMatrix mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 35 -7" in="blur" result="blur"></feColorMatrix>
         </filter>
