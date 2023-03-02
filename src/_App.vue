@@ -39,17 +39,17 @@
   
   const store = useStore();
   const route = useRoute();
-  const isWireframe = computed(() => { return store.state.isWireframe});
+  // const isWireframe = computed(() => { return store.state.isWireframe});
   const isLoading = ref(true);
   const content = ref(null)
 
-  watch(() =>isWireframe.value, (val) => {
-    // if(!val) {
-    //   document.body.classList.add('themed-filled')
-    // } else {
-    //   document.body.classList.remove('themed-filled')
-    // }
-  })
+  // watch(() =>isWireframe.value, (val) => {
+  //   if(!val) {
+  //     document.body.classList.add('themed-filled')
+  //   } else {
+  //     document.body.classList.remove('themed-filled')
+  //   }
+  // })
 
   async function fetchContent() {
     axios

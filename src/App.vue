@@ -3,16 +3,19 @@
     <Template
       :class="[
         'fixed w-full h-full top-0 left-0 -z-50',
-        route.name !== 'Home' ? 'pointer-events-none' : 'pointer-events-auto'
+        view !== 'Home' ? 'pointer-events-none' : 'pointer-events-auto'
       ]"/>
 
-
-      
-        <router-view  v-slot="{ Component }">
+        <!-- <router-view  v-slot="{ Component }">
           <transition name="slide">
             <component :is="Component" :key="route.path" :content="content" class="z-50"  v-if="route.name !== 'Home'"  />
           </transition>
-        </router-view>
+        </router-view> -->
+
+      <transition name="slide">
+        <PageInput v-if="view === 'Input'"/>
+        <PageSchedule v-else-if="view === 'Schedule'"/>
+      </transition>
 
       <LayoutNav class="fixed top-0 right-0"/>
 
@@ -30,6 +33,7 @@
   const route = useRoute();
   const isLoading = ref(true);
   const content = ref(null)
+  const view = computed(() => { return store.state.view});
 
   // watch(() => route.path, (val) => {
   //   console.log('SET')

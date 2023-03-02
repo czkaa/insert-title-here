@@ -16,8 +16,6 @@
         </details>
       </div>
 
-      
-
     </main>
   </div>
 </template>

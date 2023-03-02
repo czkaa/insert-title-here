@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed w-full h-full flex flex-col items-center overflow-y-auto overflow-x-hidden pb-24 sm:px-3">
+    <div class="fixed w-full h-full flex flex-col items-center  overflow-x-hidden pb-24 sm:px-3" :class="[view === 'Home' ? 'overflow-y-auto' : 'overflow-y-hidden']">
 
 
         <TemplateHeader class="z-50 sticky top-3 sm:top-6 sm:transform sm:-translate-y-2"/>
@@ -48,3 +48,15 @@
         </h2>
     </div>
 </template>
+
+<script setup>
+
+  import { useStore } from 'vuex';
+  import { computed } from 'vue'
+
+  const store = useStore();
+
+  const view = computed(() => { return store.state.view});
+
+
+</script>
