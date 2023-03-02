@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute w-full h-full pointer-events-auto py-6 px-16">
+  <div class="absolute w-full h-full pointer-events-auto py-6 px-16 sm:pb-24">
     <main page-schedule class="relative bg-tertiary rounded-xl p-3 transition-all duration-500 h-full flex flex-col overflow-y-auto">
       <div class="flex justify-between flex-shrink-0">
         <h3 class="text-secondary text-md filter-outline-xs">Schedule</h3>

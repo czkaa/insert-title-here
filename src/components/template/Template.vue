@@ -10,7 +10,7 @@
 
         <TemplateBody class="mt-0 xs:mt-8"/>
 
-        <TemplateFooter class="fixed bottom-1"/>
+        <TemplateFooter class="fixed bottom-1.5 sm:-bottom-4"/>
 
 
        
@@ -19,7 +19,7 @@
             <div class="w-0.25 h-20 bg-secondary rounded-full -mt-2 "/>
         </div>
 
-        <SnippetDraggable class="fixed left-8 top-14 xs:top-60 filter-outline">
+        <SnippetDraggable class="fixed left-8 top-14 xs:top-60 p-1 filter-outline">
             <div class="w-56 h-5 rounded-full transform" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5rem'}"/>
             <div class="w-28 h-5 rounded-full transform -rotate-45 -mt-5" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5rem'}"/>
             <div class="w-20 h-20 relative rounded-full border-secondary border transform translate-4  wireframe-visible">
@@ -39,7 +39,9 @@
             </div> 
         </SnippetDraggable>
 
-        <div class="w-5 h-6 rounded-full absolute left-7 top-24 xs:top-4 xs:left-4 mt-0.5 transform rotate-45 filter-outline" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5rem'}" />
+        <div class="absolute left-7 top-24 xs:top-4 xs:left-4 mt-2.5 transform rotate-45 filter-outline p-1">
+            <div class="w-5 h-6 rounded-full" :style="{backgroundImage: `url('raster.png')`, backgroundSize: '5rem'}"></div>
+        </div>
         
         <h2 :style="{filter: 'drop-shadow(0px 0px 1px var(--color-secondary)) drop-shadow(0px 0px 1px var(--color-secondary))'}"
             class="fixed top-0 text-secondary z-50 text-sm uppercase w-full text-center ">
