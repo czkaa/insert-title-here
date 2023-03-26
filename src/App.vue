@@ -30,6 +30,7 @@
   import { ref, computed, watch, onMounted } from 'vue'
   import { useStore } from 'vuex';
 import bodyParser from "body-parser";
+import { filter } from "minimatch";
   
   const store = useStore();
   const route = useRoute();
@@ -77,8 +78,9 @@ import bodyParser from "body-parser";
   }
   .mounted {
     opacity: 1;
+  }
 
-    .filter-outline {
+  .filter-outline {
       filter: url(#outline);
     }
 
@@ -97,7 +99,6 @@ import bodyParser from "body-parser";
     .filter-blur-xl {
       filter: url(#blur-xl);
     }
-  }
 
   .wireframe-text {
     @apply text-white;
