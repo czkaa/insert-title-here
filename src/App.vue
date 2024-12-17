@@ -69,6 +69,7 @@ onMounted(() => {
     document.body.classList.add('mounted');
   }, 1);
 });
+
 </script>
 
 <style lang="scss">
