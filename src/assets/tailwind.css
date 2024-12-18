@@ -11,12 +11,11 @@ body {
 }
 
 :root {
-  --color-primary: #ff320e;
-  --color-secondary: rgb(136, 132, 127);
-  --color-tertiary: hsl(22, 100%, 52%);
+  --color-primary: #604381;
+  --color-secondary: rgb(249, 79, 0);
+  --color-tertiary: hsl(74, 100%, 57%);
   --color-quaternary: rgb(228, 228, 228);
 }
-
 *::selection {
   @apply bg-tertiary;
 }

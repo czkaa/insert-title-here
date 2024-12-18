@@ -3,7 +3,6 @@
     class="h-full flex flex-col justify-center space-y-10 text-secondary filter-tertiary"
   >
     <button
-      @click="setView('Input')"
       class="flex w-20 h-40 sm:h-48 rounded-xl transition-transform duration-500 transform translate-x-10 hover:translate-x-4 cursor-pointer filter-outline-tertiary z-50 group"
     >
       <div
@@ -21,7 +20,6 @@
     </button>
 
     <button
-      @click="setView('Schedule')"
       class="flex w-20 h-48 sm:h-60 rounded-xl transition-all duration-500 transform translate-x-10 hover:translate-x-4 cursor-pointer filter-outline-tertiary z-50 group"
     >
       <div
