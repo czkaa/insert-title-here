@@ -69,13 +69,12 @@ onMounted(() => {
     document.body.classList.add('mounted');
   }, 1);
 });
-
 </script>
 
 <style lang="scss">
 body {
   opacity: 0;
-  transition: opacity 800ms linear;
+  transition: opacity 100ms linear;
 }
 .mounted {
   opacity: 1;
