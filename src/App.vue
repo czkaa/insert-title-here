@@ -73,8 +73,6 @@ onMounted(() => {
 
 <style lang="scss">
 body {
-  opacity: 0;
-  transition: opacity 100ms linear;
 }
 .mounted {
   opacity: 1;
